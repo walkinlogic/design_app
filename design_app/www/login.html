@@ -1,0 +1,924 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <title>Login</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/fontawesome.css">
+
+</head>
+
+
+<style>
+    body {
+        overflow-y: auto !important
+    }
+
+    .login-sec {
+        padding: 0px !important;
+    }
+
+    .support-message {
+        background-color: #ffffff;
+        color: #0a72ea;
+        text-align: center;
+        line-height: 1.5;
+        border: 1px solid;
+        padding: 6px 12px;
+        font-size: 14px;
+        border-radius: 4px;
+        margin: 27px auto 0px;
+        font-weight: bold;
+        width: 74%;
+    }
+
+    .web-footer {
+        display: none
+    }
+
+    .for-signup {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .w-402 {
+        width: 402px;
+    }
+
+    #page-login .container-fluid {
+
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .fs-2qx {
+        font-size: 2.25rem !important;
+    }
+
+    .navbar.navbar-light,
+    .logo-head h4 {
+        display: none
+    }
+
+    .fs-2qx {
+        font-size: 2.25rem !important;
+    }
+
+    .fs-base {
+        font-size: 1rem !important;
+    }
+
+    .row.vh-100 {
+        margin-right: 0px;
+    }
+
+    .login-container {
+        background-color: #F5F7FA;
+    }
+
+    .login-content.page-card {
+        width: 420px;
+        margin: 0 auto;
+        padding: 35px;
+        background-color: #fff;
+    }
+
+
+
+    .fs-base {
+        font-size: 1rem !important;
+    }
+
+    .text-white {
+        color: #fff;
+    }
+
+    .w-100 {
+        width: 100%;
+    }
+
+    .login-sec {
+
+        padding: Max(15vh, 70px) 0;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .login-section h4 {
+        margin: 24px 0px 3px;
+        font-size: 16px;
+    }
+
+    .text-white {
+        color: white
+    }
+
+    .fs-13 {
+        font-size: 13px;
+    }
+
+    .logo-img {
+        z-index: 55555;
+
+        margin-top: 1px;
+        width: 86px;
+
+    }
+
+    .home-video video {
+        height: 100%
+    }
+
+    .vh-100 {
+        height: 100vh
+    }
+
+
+    .text-center {
+        text-align: center !important;
+    }
+
+    .text-gray-500 {
+        color: #a1a5b7 !important;
+    }
+
+    .form-signin {
+        padding: 0 !important;
+        width: 100%;
+    }
+
+    .form-signin .page-card-body {
+        width: 100%;
+    }
+
+    .my-14 {
+        margin-top: 3.5rem !important;
+        margin-bottom: 3.5rem !important;
+    }
+
+    .separator {
+        height: 0;
+        width: 100%;
+    }
+
+    .pr-0 {
+        padding-right: 0px;
+    }
+
+    .text-gray-500 {
+        color: #a1a5b7 !important;
+    }
+
+    .fw-semibold {
+        font-weight: 500 !important;
+    }
+
+    .fs-7 {
+        font-size: 12px !important;
+    }
+
+    .separator.separator-content::after {
+        margin-left: 11px;
+    }
+
+    .separator.separator-content::before,
+    .separator.separator-content::after {
+        content: " ";
+        width: 13%;
+        border-bottom: 1px solid #f4f4f4;
+    }
+
+    .separator.separator-content::before {
+        margin-right: 11px;
+    }
+
+    .separator.separator-content {
+        display: flex;
+        align-items: center;
+        border-bottom: 0;
+        text-align: center;
+    }
+
+    .login-bg-wrapper {
+        height: 100vh;
+        justify-content: center;
+        align-items: flex-end;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .login-bg-wrapper img {
+        max-height: 100%;
+    }
+
+    .link-primary {
+        color: #006cea !important;
+    }
+
+    .fw-semibold {
+        font-weight: 500 !important;
+    }
+
+    .forgot-image {
+        background-color: #1CABE2;
+        color: #fff;
+        position: relative;
+        height: 100vh;
+        margin-top: -90px;
+    }
+
+    .description {
+        position: absolute;
+        top: 20px;
+        left: 35px;
+        color: #fff;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19px;
+    }
+
+    .description span {
+        color: #fff;
+        font-size: 40px;
+        font-weight: 700;
+        font-family: PT Sans, sans-serif;
+        display: block;
+        line-height: 35px;
+    }
+
+    .flex-stack {
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .px-10 {
+        padding-right: 2.5rem !important;
+        padding-left: 2.5rem !important;
+    }
+
+    .text-primary {
+        color: #009ef7;
+    }
+
+    .mx-auto {
+        margin-right: auto !important;
+        margin-left: auto !important;
+    }
+
+    .d-flex {
+        display: flex !important;
+    }
+
+    .fw-semibold {
+        font-weight: 500 !important;
+    }
+
+    .fs-base {
+        font-size: 1rem !important;
+    }
+
+    .jc-end {
+        justify-content: end;
+    }
+
+    .gap-5 {
+        gap: 1.25rem !important;
+    }
+
+    .app-title {
+        margin-top: 28px;
+        font-size: 16px;
+        line-height: 1.2;
+    }
+
+    .app-title p {
+        color: #9EB3C7;
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    .app-subtitle {
+        font-size: 14px;
+        display: block;
+        margin-top: 4px;
+    }
+
+    .m-29 {
+        margin: 29px 0px;
+    }
+
+    .login-section {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+        padding-top: 38px;
+    }
+
+    .logo-head {
+        align-items: center;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .logo-head img {
+        width: 209px !important;
+
+        margin: 20px;
+    }
+
+    .logo-head h3 {
+        font-size: 36px;
+        margin: 0;
+        padding: 0 2px 0px 7px;
+        display: inline-block;
+        text-transform: uppercase;
+        vertical-align: middle;
+        color: #1eabe3;
+    }
+
+    .logo-head p {
+        max-width: 92px;
+        font-size: 14px;
+        line-height: 16px;
+        font-weight: 500;
+        margin: 19px 0 0 0;
+        padding: 0;
+        vertical-align: middle;
+        display: inline-block;
+        color: #000;
+    }
+
+    .forgot-password-message {
+        text-align: start !important;
+        margin-top: 18px !important;
+        font-size: 15px !important;
+        margin-bottom: 0px;
+    }
+
+    .forgot-password-message a {
+        color: #0A68CD !important;
+    }
+
+    .forget__icon.fa-eye,
+    .forget__icon.fa-eye-slash {
+        color: #718096 !important;
+        position: absolute !important;
+        right: 5px !important;
+        top: 4px !important;
+    }
+
+
+    .login__field {
+        padding: 0px !important;
+        position: relative !important;
+
+    }
+
+    .login__icon {
+        color: #9EB3C7 !important;
+        font-size: 14px !important;
+        position: relative !important;
+        top: 33px !important;
+        right: -11px !important;
+    }
+
+    .login__input {
+        padding: 10px 10px 10px 45px !important;
+        font-weight: 700 !important;
+        width: 100% !important;
+        font-size: 15px !important;
+        border: 1px solid #d9d9d9 !important;
+        border-radius: 12px !important;
+        font-weight: 400 !important;
+    }
+
+    .login__input::placeholder {
+        color: #8f8f90;
+    }
+
+    .login__input:active,
+    .login__input:focus,
+    .login__input:hover {
+        outline: none !important;
+        border: 1px solid #b5b5c3 !important;
+    }
+
+    .login-copyright {
+        position: absolute;
+        right: 30px !important;
+        bottom: 6px !important;
+        color: #fff !important;
+        font-size: 13px !important;
+    }
+
+    .login__submit {
+        width: 100% !important;
+        height: 45px !important;
+        font-weight: 600 !important;
+        font-size: 18px !important;
+        line-height: 40px !important;
+        color: #fff !important;
+        margin-top: 30px;
+        background-color: #0A68CD !important;
+        border-color: #0A68CD !important;
+        display: block !important;
+        border-radius: 12px !important;
+        padding: 0px !important;
+        border: none;
+        transition: all 0.3s ease;
+        box-shadow: 0px 10.049999237060547px 17.587499618530273px 3.3499999046325684px #4461F226;
+    }
+
+    .login__submit:hover {
+        opacity: 0.8;
+    }
+
+    .mt-26 {
+        margin-top: 26px;
+    }
+
+    .fs-14 {
+        font-size: 14px;
+    }
+
+    .button__icon {
+        font-size: 14px !important;
+        margin-left: auto !important;
+        color: #ffffff !important;
+        display: none !important;
+    }
+
+    .for-forgot {
+        padding: 0px !important;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        height: 100%;
+    }
+
+    .mob-header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .mob-header img {
+        width: 165px;
+        height: 86px;
+    }
+
+    .social-login {
+        position: relative !important;
+        height: unset !important;
+    }
+
+    .sign-up-message {
+        margin: 10px 0px;
+        text-align: end;
+        font-size: 15px !important;
+    }
+
+    .invalid .login__input,
+    .invalid .login__input:active,
+    .invalid .login__input:focus,
+    .invalid .login__input:hover {
+        border: 1px solid #e24c4c !important;
+    }
+
+    /* .login-section .text-muted {
+			color:#6e82a3 !important;
+			position: absolute !important;
+			right: 13px !important;
+			top: 27px !important;
+		}
+		.forget__icon.fa-eye {
+  color: #718096 !important;
+  position: absolute !important;
+  right: 13px !important;
+  top: 29px !important;
+} */
+    .toggle-password {
+        position: absolute;
+        right: 14px;
+        top: 41px;
+    }
+
+    @media screen and (max-width: 480px) {
+        .mob-header {
+            background-image: url('/assets/frappe/images/auth-bg.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .logo-head img,
+        .logo-img {
+            margin: 2px auto;
+            display: block;
+        }
+
+        .support-message {
+            width: 100%
+        }
+
+        .for-forgot .mob-header {
+            padding-left: 8px
+        }
+
+        .for-forgot .support-message {
+            width: 308px;
+
+            margin-bottom: 40px;
+
+        }
+
+        .mob-hide,
+        .web-view {
+            display: none
+        }
+
+        .mob-pr-0 {
+            padding-right: 0px !important
+        }
+
+        .separator.separator-content::before,
+        .separator.separator-content::after {
+            width: 12%
+        }
+
+        .separator.separator-content {
+            margin: 56px 0px 21px;
+        }
+
+        body {
+
+            position: relative;
+            height: 100%;
+            overflow: auto !important;
+
+        }
+
+        .login-container {
+            /* display: block !important
+		; */
+        }
+
+        .login-left.bg-white {
+            display: none;
+        }
+
+        .mob-jc-center {
+            justify-content: center;
+        }
+
+        .app-title {
+            font-size: 13px;
+            color: #fff
+        }
+
+        .app-subtitle {
+            font-size: 12px
+        }
+
+        .login-sec {
+            height: unset
+        }
+
+        .for-signup {
+            padding: 12px 25px 0px !important;
+        }
+
+        .for-signup .app-title {
+            color: black
+        }
+
+        .login-section {
+            padding: 0px 0px 38px;
+        }
+
+        .for-forgot .page-card-body {}
+
+        .login,
+        .for-forgot .page-card-body {
+            width: 297px !important;
+
+        }
+
+        .screen {
+            width: 351px !important;
+            height: 545px !important;
+        }
+
+        #page-login {
+            overflow-x: hidden;
+        }
+
+        .page-card-body {
+            margin-top: 6px;
+        }
+
+        .login-container {
+            background-color: #F5F7FA;
+        }
+
+        .for-forgot {
+            height: unset;
+            padding: 2px !important;
+
+
+        }
+
+        .for-forgot .w-402 {
+            width: unset;
+        }
+
+        .screen__content input {
+            margin-bottom: 0px;
+        }
+
+
+
+        .sign-up-message {
+            text-align: end !important;
+        }
+
+        .logo-head h4 {
+            font-size: 20px !important;
+            display: block
+        }
+    }
+
+    @media screen and (-webkit-min-device-pixel-ratio:0) {
+
+        select,
+        textarea,
+        input {
+            font-size: 16px;
+        }
+    }
+</style>
+{% extends "templates/web.html" %}
+
+
+
+{% macro email_login_body() -%}
+<div class="page-card-body">
+    <div class="login__field">
+        <svg class="login__icon" width="24" height="17" viewBox="0 0 24 17" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M23.983 1.8968C23.9959 1.55594 23.8742 1.22369 23.6443 0.971703C23.4144 0.719719 23.0947 0.568193 22.754 0.549805L1.22905 0.581802C1.06418 0.583425 0.901524 0.619905 0.751756 0.688843C0.601988 0.757781 0.468496 0.85762 0.360046 0.981804C0.125601 1.24391 -0.00243983 1.58416 0.00104591 1.93581L0.0170459 15.2048C0.014165 15.5564 0.142941 15.8964 0.378046 16.1578C0.48693 16.2808 0.620504 16.3794 0.770062 16.4473C0.91962 16.5152 1.0818 16.5508 1.24605 16.5518L22.771 16.5198C23.1127 16.5014 23.4334 16.3491 23.6635 16.0958C23.8936 15.8425 24.0145 15.5087 24 15.1668L23.983 1.8968ZM21.403 1.8968L12 9.07181L2.58005 1.9288L21.403 1.8968ZM15.976 10.4218L21.553 15.1668L2.42905 15.1958L8.04005 10.4218C8.17046 10.3045 8.25353 10.1437 8.2736 9.96944C8.29368 9.79521 8.24938 9.61965 8.14905 9.47581C8.10376 9.40699 8.04431 9.34863 7.97467 9.30463C7.90503 9.26062 7.82681 9.23199 7.74522 9.22063C7.66363 9.20927 7.58055 9.21545 7.50154 9.23876C7.42253 9.26207 7.3494 9.30198 7.28705 9.3558L1.24505 14.5048L1.23005 2.54481L11.652 10.4448C11.7521 10.5226 11.8753 10.5649 12.002 10.5649C12.1288 10.5649 12.252 10.5226 12.352 10.4448L22.752 2.5108L22.768 14.4968L16.728 9.3578C16.6657 9.30398 16.5926 9.26407 16.5135 9.24076C16.4345 9.21745 16.3515 9.21127 16.2699 9.22263C16.1883 9.23398 16.1101 9.26263 16.0404 9.30663C15.9708 9.35064 15.9113 9.40899 15.866 9.47781C15.7654 9.62205 15.7211 9.79818 15.7416 9.97288C15.762 10.1476 15.8458 10.3087 15.977 10.4258L15.976 10.4218Z"
+                fill="#9EB3C7" />
+        </svg>
+        <input type="text" id="login_email" class="login__input"
+            placeholder="{% if login_name_placeholder %}{{ login_name_placeholder  }}{% else %}{{ _('Email Address') }}{% endif %}"
+            required autofocus>
+    </div>
+    <div class="login__field">
+        <svg class="login__icon" width="16" height="25" viewBox="0 0 16 25" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M7.99999 12.7744C7.49119 12.7744 6.9941 12.9271 6.57297 13.2126C6.15184 13.4981 5.82605 13.9034 5.6377 14.376C5.44935 14.8487 5.4071 15.367 5.51644 15.8639C5.62577 16.3608 5.88165 16.8135 6.251 17.1634V19.4634C6.251 19.9275 6.43536 20.3726 6.76355 20.7008C7.09174 21.029 7.53687 21.2134 8.001 21.2134C8.46512 21.2134 8.91025 21.029 9.23844 20.7008C9.56663 20.3726 9.751 19.9275 9.751 19.4634V17.1634C10.1203 16.8135 10.3762 16.3608 10.4856 15.8639C10.5949 15.367 10.5526 14.8487 10.3643 14.376C10.1759 13.9034 9.85015 13.4981 9.42902 13.2126C9.00789 12.9271 8.51078 12.7744 8.00199 12.7744H7.99999ZM8.9 16.2744C8.78016 16.387 8.68448 16.5228 8.61881 16.6736C8.55314 16.8244 8.51884 16.9869 8.51799 17.1514V19.4614C8.52107 19.5313 8.50996 19.601 8.48534 19.6665C8.46072 19.732 8.42309 19.7918 8.37473 19.8423C8.32637 19.8928 8.26829 19.9331 8.20397 19.9605C8.13965 19.988 8.07043 20.0022 8.00049 20.0022C7.93055 20.0022 7.86133 19.988 7.79702 19.9605C7.7327 19.9331 7.67461 19.8928 7.62625 19.8423C7.5779 19.7918 7.54028 19.732 7.51566 19.6665C7.49104 19.601 7.47992 19.5313 7.48299 19.4614V17.1514C7.48215 16.9869 7.44785 16.8244 7.38218 16.6736C7.3165 16.5228 7.22084 16.387 7.101 16.2744C6.97029 16.1522 6.86622 16.0042 6.79532 15.8399C6.72443 15.6756 6.68824 15.4984 6.689 15.3194C6.689 14.9717 6.82711 14.6383 7.07297 14.3924C7.31883 14.1465 7.65229 14.0084 7.99999 14.0084C8.34769 14.0084 8.68115 14.1465 8.92701 14.3924C9.17287 14.6383 9.31099 14.9717 9.31099 15.3194C9.31134 15.4979 9.27494 15.6745 9.20406 15.8383C9.13318 16.0021 9.02933 16.1495 8.89899 16.2714L8.9 16.2744Z"
+                fill="#9EB3C7" />
+            <path
+                d="M14.4109 10.388H12.8229V5.803C12.8807 5.13461 12.7989 4.4615 12.5828 3.82638C12.3667 3.19126 12.0209 2.608 11.5674 2.1136C11.1139 1.6192 10.5626 1.22445 9.94848 0.954409C9.33434 0.684367 8.67078 0.544922 7.99989 0.544922C7.32901 0.544922 6.66544 0.684367 6.0513 0.954409C5.43717 1.22445 4.88586 1.6192 4.43237 2.1136C3.97888 2.608 3.6331 3.19126 3.41697 3.82638C3.20085 4.4615 3.11909 5.13461 3.17689 5.803V10.388H1.58989C1.15022 10.408 0.736333 10.6012 0.438611 10.9253C0.140889 11.2494 -0.016472 11.6782 0.000889951 12.118V22.818C-0.0170141 23.2581 0.140108 23.6874 0.437886 24.012C0.735665 24.3366 1.14986 24.53 1.58989 24.55H14.4109C14.8506 24.53 15.2644 24.3368 15.5622 24.0127C15.8599 23.6886 16.0173 23.2598 15.9999 22.82V12.12C16.0178 11.6799 15.8607 11.2506 15.5629 10.926C15.2651 10.6014 14.8509 10.408 14.4109 10.388ZM4.23589 5.803C4.19086 5.28141 4.25473 4.75616 4.42344 4.26057C4.59215 3.76497 4.86201 3.30985 5.21592 2.92407C5.56983 2.53829 6.00006 2.23028 6.47931 2.01957C6.95855 1.80886 7.47637 1.70005 7.99989 1.70005C8.52341 1.70005 9.04123 1.80886 9.52047 2.01957C9.99972 2.23028 10.4299 2.53829 10.7839 2.92407C11.1378 3.30985 11.4076 3.76497 11.5763 4.26057C11.7451 4.75616 11.8089 5.28141 11.7639 5.803V10.388H4.23589V5.803ZM14.9409 22.82C14.9469 22.9667 14.8944 23.1098 14.7951 23.218C14.6957 23.3261 14.5576 23.3905 14.4109 23.397H1.58989C1.44318 23.3905 1.30503 23.3261 1.20569 23.218C1.10635 23.1098 1.05392 22.9667 1.05989 22.82V12.12C1.05392 11.9733 1.10635 11.8302 1.20569 11.722C1.30503 11.6139 1.44318 11.5495 1.58989 11.543H14.4109C14.5576 11.5495 14.6957 11.6139 14.7951 11.722C14.8944 11.8302 14.9469 11.9733 14.9409 12.12V22.82Z"
+                fill="#9EB3C7" />
+        </svg>
+
+        <input type="password" id="login_password" class="login__input" placeholder="Password"
+            autocomplete="current-password" required>
+        <svg toggle="#login_password" class="toggle-password" width="24" height="17" viewBox="0 0 24 17" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_428_582)">
+                <path
+                    d="M23.6111 7.22078C22.318 5.24089 20.5932 3.57965 18.5661 2.36178C16.635 1.20909 14.4348 0.584532 12.1861 0.550781C12.1241 0.550781 11.8771 0.550781 11.8151 0.550781C9.56643 0.584532 7.36618 1.20909 5.43511 2.36178C3.40806 3.57965 1.68323 5.24089 0.390114 7.22078C0.136023 7.61747 0.000976563 8.07869 0.000976562 8.54978C0.000976563 9.02087 0.136023 9.48208 0.390114 9.87878C1.68323 11.8587 3.40806 13.5199 5.43511 14.7378C7.36616 15.8905 9.56643 16.5151 11.8151 16.5488C11.8771 16.5488 12.1241 16.5488 12.1861 16.5488C14.4348 16.515 16.635 15.8905 18.5661 14.7378C20.5932 13.5199 22.318 11.8587 23.6111 9.87878C23.8652 9.48208 24.0002 9.02087 24.0002 8.54978C24.0002 8.07869 23.8652 7.61747 23.6111 7.22078ZM5.87111 13.7098C3.97788 12.5724 2.3669 11.0209 1.15911 9.17178C1.0402 8.98593 0.977006 8.76991 0.977006 8.54928C0.977006 8.32864 1.0402 8.11263 1.15911 7.92678C2.36687 6.07764 3.97786 4.52614 5.87111 3.38878C6.38082 3.08898 6.91076 2.825 7.45711 2.59878C6.00151 4.23897 5.19765 6.35584 5.19765 8.54878C5.19765 10.7417 6.00151 12.8586 7.45711 14.4988C6.91079 14.2729 6.38085 14.0092 5.87111 13.7098ZM12.0021 15.4028C8.78911 15.4028 6.17511 12.3288 6.17511 8.54978C6.17511 4.77078 8.78911 1.69678 12.0021 1.69678C15.2151 1.69678 17.8291 4.77078 17.8291 8.54978C17.8291 12.3288 15.2131 15.4028 12.0021 15.4028ZM22.8431 9.17278C21.6354 11.0219 20.0244 12.5734 18.1311 13.7108C17.6217 14.0099 17.0921 14.2732 16.5461 14.4988C18.0017 12.8586 18.8056 10.7417 18.8056 8.54878C18.8056 6.35584 18.0017 4.23897 16.5461 2.59878C17.0928 2.82527 17.6231 3.08957 18.1331 3.38978C20.0264 4.52716 21.6373 6.07866 22.8451 7.92778C22.9634 8.11401 23.0259 8.33023 23.0252 8.55087C23.0245 8.7715 22.9606 8.98731 22.8411 9.17278H22.8431Z"
+                    fill="#9EB3C7" />
+                <path
+                    d="M11.9999 6.11035C11.5183 6.11035 11.0476 6.25316 10.6471 6.52072C10.2467 6.78828 9.93459 7.16857 9.7503 7.61351C9.566 8.05845 9.51778 8.54806 9.61173 9.0204C9.70569 9.49274 9.93759 9.92661 10.2781 10.2672C10.6187 10.6077 11.0525 10.8396 11.5249 10.9336C11.9972 11.0275 12.4868 10.9793 12.9318 10.795C13.3767 10.6107 13.757 10.2986 14.0246 9.89816C14.2921 9.49773 14.4349 9.02695 14.4349 8.54535C14.4341 7.89979 14.1773 7.2809 13.7209 6.82442C13.2644 6.36794 12.6455 6.11115 11.9999 6.11035ZM11.9999 10.0273C11.7068 10.0273 11.4203 9.94043 11.1766 9.77759C10.9329 9.61474 10.7429 9.38329 10.6307 9.11249C10.5186 8.84169 10.4892 8.54371 10.5464 8.25623C10.6036 7.96875 10.7447 7.70468 10.952 7.49742C11.1593 7.29016 11.4233 7.14901 11.7108 7.09183C11.9983 7.03464 12.2963 7.06399 12.5671 7.17616C12.8379 7.28833 13.0693 7.47829 13.2322 7.722C13.395 7.96571 13.4819 8.25224 13.4819 8.54535C13.4823 8.74027 13.4443 8.93335 13.37 9.11356C13.2957 9.29376 13.1866 9.45757 13.049 9.59558C12.9113 9.7336 12.7479 9.84312 12.5678 9.91789C12.3878 9.99267 12.1949 10.0312 11.9999 10.0313V10.0273Z"
+                    fill="#9EB3C7" />
+            </g>
+            <defs>
+                <clipPath id="clip0_428_582">
+                    <rect width="24" height="16" fill="white" transform="translate(0 0.549805)" />
+                </clipPath>
+            </defs>
+        </svg>
+    </div>
+    <p class="forgot-password-message">
+        <a href="#forgot">{{ _("Forgot password?") }}</a>
+    </p>
+
+    <button class="button login__submit" type="submit"><span class="button__text">{{ _("Sign In") }}</span><i
+            class="button__icon fas fa-chevron-right"></i></button>
+
+    {% if ldap_settings and ldap_settings.enabled %}
+    <button class="btn btn-sm btn-default btn-block btn-login btn-ldap-login">
+        {{ _("Login with LDAP") }}</button>
+    {% endif %}
+</div>
+
+{% endmacro %}
+
+{% block head_include %}
+<link type="text/css" rel="stylesheet" href="/assets/css/app.css">
+{% endblock %}
+
+{% macro logo_section() %}
+<div class="page-card-head">
+    <div class="d-flex">
+        <img class="logo-img" src="/assets/frappe/images/login-logo.png" alt="logo" />
+        <div class="app-title">
+            <p>Use your credentials to login into your account.</p>
+        </div>
+    </div>
+    <h4>{{ _('Login to Frappe') }}</h4>
+</div>
+{% endmacro %}
+
+{% block page_content %}
+<!-- {{ for_test }} -->
+<div>
+    <noscript>
+        <div class="text-center my-5">
+            <h4>{{ _("Javascript is disabled on your browser") }}</h4>
+            <p class="text-muted">
+                {{ _("You need to enable JavaScript for your app to work.") }}<br>{{ _("To enable it follow the
+                instructions in the following link: {0}").format("<a
+                    href='https://enable-javascript.com/'>enable-javascript.com</a></p>") }}
+        </div>
+    </noscript>
+
+
+    <div class="row vh-100 login-container">
+
+        <div class="col-md-6 mob-pr-0 ">
+            <section class="login-sec for-login">
+
+
+                <div class="login-content page-card">
+
+
+                    <div class="login-section">
+                        <div class="d-flex mob-header">
+                            <img class="logo-img" src="/assets/design_app/images/login-logo.png" alt="logo" />
+                            <div class="app-title">
+                                <p>Use your credentials to login into your account.</p>
+                            </div>
+                        </div>
+
+                        <form class="form-signin form-login login" role="form">
+                            {%- if social_login -%}
+                            <div class="social-logins text-center">
+                                <div class="social-login-buttons">
+                                    {% for provider in provider_logins %}
+                                    <div class="login-button-wrapper">
+                                        <a href="{{ provider.auth_url }}"
+                                            class="btn btn-block btn-default btn-sm btn-login-option btn-{{ provider.name }}">
+                                            {% if provider.icon %}
+                                            {{ provider.icon }}
+                                            {% endif %}
+                                            {{ _("Login With {0}").format(provider.provider_name) }}</a>
+                                    </div>
+                                    {% endfor %}
+                                    <p class="text-muted login-divider">{{ _("or") }}</p>
+                                </div>
+                            </div>
+                            <a href="#email" class="btn btn-block btn-default btn-sm btn-login-option">
+                                {{ _("Login With Email") }}</a>
+
+                            {% else %}
+                            {{ email_login_body() }}
+                            {%- endif -%}
+                        </form>
+                    </div>
+                </div>
+            </section>
+
+
+
+            {%- if social_login -%}
+            <section class='for-email-login'>
+                <div class="login-content page-card">
+                    {{ logo_section() }}
+                    <form class="form-signin form-login" role="form">
+                        {{ email_login_body() }}
+                    </form>
+                </div>
+                {%- if not disable_signup -%}
+                <div class="text-center sign-up-message">
+                    {{ _("Don't have an account?") }}
+                    <a href="#signup">{{ _("Sign up") }}</a>
+                </div>
+                {%- endif -%}
+            </section>
+            {%- endif -%}
+            <section class='for-signup {{ "signup-disabled" if disable_signup else "" }}'>
+                <div class="login-content page-card">
+                    {{ logo_section() }}
+                    {%- if not disable_signup -%}
+                    <form class="form-signin form-signup hide" role="form">
+                        <div class="page-card-body">
+                            <div class="form-group">
+                                <label class="form-label sr-only" for="signup_fullname">Full Name</label>
+                                <input type="text" id="signup_fullname" class="form-control"
+                                    placeholder="{{ _('Umer Farooq') }}" required autofocus>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label sr-only" for="signup_email">Email</label>
+                                <input type="email" id="signup_email" class="form-control"
+                                    placeholder="{{ _('umer@example.com') }}" required>
+                            </div>
+                        </div>
+                        <div class="page-card-actions">
+                            <button class="btn btn-sm btn-primary btn-block btn-signup" type="submit">{{ _("Sign up")
+                                }}</button>
+
+                            <p class="text-center sign-up-message">
+                                <a href="#login" class="blue">{{ _("Have an account? Login") }}</a>
+                            </p>
+                        </div>
+                    </form>
+                    {%- else -%}
+                    <div class='page-card-head'>
+                        <div class="alert alert-danger" role="alert">
+                            <span class='indicator gray'>{{_("Signups have been disabled for this website.")}}</span>
+                        </div>
+
+                    </div>
+                    <p></p>
+                    <div><a href='/' class='btn btn-primary btn-sm'>{{ _("Login") }}</a></div>
+                    {%- endif -%}
+                </div>
+
+            </section>
+
+            <section class='for-forgot'>
+                <div class="login-section">
+                    <div class="login-sec">
+                        <div class="login-content page-card">
+                            <div class="d-flex mob-header">
+                                <img class="logo-img" src="/assets/design_app/images/login-logo.png" alt="logo" />
+                                <div class="app-title">
+                                    <p>Use your email address to reset your password.</p>
+                                </div>
+                            </div>
+
+                            <form class="form-signin form-forgot login-section hide" role="form">
+
+                                <div class="page-card-body">
+                                    <div class="login__field">
+                                        <svg class="login__icon" width="24" height="17" viewBox="0 0 24 17" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M23.983 1.8968C23.9959 1.55594 23.8742 1.22369 23.6443 0.971703C23.4144 0.719719 23.0947 0.568193 22.754 0.549805L1.22905 0.581802C1.06418 0.583425 0.901524 0.619905 0.751756 0.688843C0.601988 0.757781 0.468496 0.85762 0.360046 0.981804C0.125601 1.24391 -0.00243983 1.58416 0.00104591 1.93581L0.0170459 15.2048C0.014165 15.5564 0.142941 15.8964 0.378046 16.1578C0.48693 16.2808 0.620504 16.3794 0.770062 16.4473C0.91962 16.5152 1.0818 16.5508 1.24605 16.5518L22.771 16.5198C23.1127 16.5014 23.4334 16.3491 23.6635 16.0958C23.8936 15.8425 24.0145 15.5087 24 15.1668L23.983 1.8968ZM21.403 1.8968L12 9.07181L2.58005 1.9288L21.403 1.8968ZM15.976 10.4218L21.553 15.1668L2.42905 15.1958L8.04005 10.4218C8.17046 10.3045 8.25353 10.1437 8.2736 9.96944C8.29368 9.79521 8.24938 9.61965 8.14905 9.47581C8.10376 9.40699 8.04431 9.34863 7.97467 9.30463C7.90503 9.26062 7.82681 9.23199 7.74522 9.22063C7.66363 9.20927 7.58055 9.21545 7.50154 9.23876C7.42253 9.26207 7.3494 9.30198 7.28705 9.3558L1.24505 14.5048L1.23005 2.54481L11.652 10.4448C11.7521 10.5226 11.8753 10.5649 12.002 10.5649C12.1288 10.5649 12.252 10.5226 12.352 10.4448L22.752 2.5108L22.768 14.4968L16.728 9.3578C16.6657 9.30398 16.5926 9.26407 16.5135 9.24076C16.4345 9.21745 16.3515 9.21127 16.2699 9.22263C16.1883 9.23398 16.1101 9.26263 16.0404 9.30663C15.9708 9.35064 15.9113 9.40899 15.866 9.47781C15.7654 9.62205 15.7211 9.79818 15.7416 9.97288C15.762 10.1476 15.8458 10.3087 15.977 10.4258L15.976 10.4218Z"
+                                                fill="#9EB3C7" />
+                                        </svg>
+                                        <input type="email" id="forgot_email" class="login__input"
+                                            placeholder="{{ _('Email Address') }}" required="">
+                                    </div>
+                                    <button class="button login__submit btn-forgot" type="submit">{{ _("Reset Password")
+                                        }}
+                                        <i class="button__icon fas fa-chevron-right"></i></button>
+                                    <p class=" sign-up-message">
+                                        <a href="#login">{{ _("Back to Login") }}</a>
+                                    </p>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class="col-md-6 pr-0 web-view ">
+            <div class="login-bg-wrapper">
+                <img class="login-img" src="/assets/design_app/images/login-pic.png" alt="logo" />
+            </div>
+        </div>
+    </div>
+
+
+    {% endblock %}
+
+    {% block script %}
+
+
+    <script>{% include "templates/includes/login/login.js" %}
+        $('.container').addClass('container-fluid').removeClass('container my-4');
+
+    </script>
+    {% endblock %}
+
+    {% block sidebar %}{% endblock %}
+
+</html>

@@ -1,0 +1,29 @@
+<header class="navbar navbar-expand sticky-top flex justify-content-center" role="navigation">
+    <span class="sidebar-toggle-btn sidebartogglebtn" onclick="sidebartogglebtn()" title=""
+        data-original-title="Toggle Sidebar">
+        <svg class="icon icon-md sidebar-toggle-placeholder">
+            <use href="#icon-menu"></use>
+        </svg>
+    </span>
+    <div class="container">
+        <div class="collapse navbar-collapse justify-content-end">
+            <form class="form-inline fill-width justify-content-end" role="search" onsubmit="return false;">
+                {% if (frappe.boot.read_only) { %}
+                <span class="indicator-pill yellow no-indicator-dot" title="{%= __(" Your site is getting upgraded.")
+                    %}">
+                    {%= __("Read Only Mode") %}
+                </span>
+                {% } %}
+                <div class="input-group search-bar text-muted hidden">
+                    <input id="navbar-search" type="text" class="form-control" placeholder="{%= __(" Search or type a
+                        command (Ctrl + G)") %}" aria-haspopup="true">
+                    <span class="search-icon">
+                        <svg class="icon icon-sm">
+                            <use href="#icon-search"></use>
+                        </svg>
+                    </span>
+                </div>
+            </form>
+        </div>
+    </div>
+</header>
