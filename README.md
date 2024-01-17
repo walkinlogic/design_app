@@ -34,3 +34,5 @@ I encourage you to contribute to the project, whether through feedback, bug repo
 🔗 **GitHub Repository: [https://github.com/walkinlogic/design_app/]**
 
 Elevate your Frappe experience today – download, install, and embark on a journey of innovation with the redesigned Frappe Framework. Let's redefine app development together! 🚀💻
+
+<img alt="Asset - Asset" src="https://github.com/walkinlogic/design_app/blob/main/design_app/public/images/Asset%20-%20Asset.png?raw=true" data-hpc="true" class="Box-sc-g0xbh4-0 kzRgrI">
